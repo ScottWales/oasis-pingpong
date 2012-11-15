@@ -1,0 +1,46 @@
+ $SEQMODE
+ 1
+ $END
+ $CHANNEL
+ MPI1 BSEND
+ 1 1 a
+ 1 1 b
+ $END
+ $NFIELDS
+ 2
+ $END
+ $JOBNAME
+ TEST
+ $END
+ $NBMODEL
+ 2 A B
+ $END
+ $RUNTIME
+ 150
+ $END
+ $INIDATE
+ 10000101
+ $END
+ $MODINFO
+ NOT
+ $END
+ $NLOGPRT
+ 2
+ $END
+ $CALTYPE
+ 30
+ $END
+ $STRINGS
+ aoutxxxx binxxxxx 1 50 3 rsta.nc EXPORTED
+ axxx axxx LAG=+0
+  R 0 R 0
+ CHECKIN NOINTERP CHECKOUT
+ INT=0
+ INT=0
+ boutxxxx ainxxxxx 1 50 3 rstb.nc EXPORTED
+ axxx axxx LAG=+10
+  R 0 R 0
+ CHECKIN NOINTERP CHECKOUT
+ INT=0
+ INT=0
+ $END
