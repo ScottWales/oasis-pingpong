@@ -1,0 +1,14 @@
+= Oasis Pingpong test =
+
+Bounces a field between two programs using oasis
+
+Requires oasis3, netcdf & a MPI library
+
+On vayu:
+
+    module use ~saw562/modules
+    module load netcdf
+    module load oasis3
+    module load openmpi/1.4.3
+    make
+    
