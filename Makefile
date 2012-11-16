@@ -1,6 +1,10 @@
 all:a b rsta.nc rstb.nc
-	rm anaisout
+	rm -f anaisout
 	mpiexec -n 1 oasis3.MPI1.x : -n 1 a : -n 1 b
+
+clean:
+	rm -f *.prt* a b *out *weights rsta.nc rstb.nc grids.nc masks.nc
+	
 
 FC=mpif90
 LD=$(FC)
