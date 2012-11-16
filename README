@@ -4,6 +4,9 @@ Bounces a field between two programs using oasis
 
 Requires oasis3, netcdf & a MPI library
 
+There are two programs, A and B. Each has an output and input field, and will
+send the output to the other model's input field.
+
 On vayu:
 
     module use ~saw562/modules
