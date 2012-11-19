@@ -32,7 +32,7 @@
  $END
  $STRINGS
  aoutxxxx binxxxxx 1 50 3 rsta.nc EXPORTED
- axxx bxxx LAG=+10 SEQ=+1
+ axxx bxxx LAG=+0 SEQ=+1
   R 0 R 0
  CHECKIN NOINTERP CHECKOUT
  INT=0
