@@ -1,5 +1,5 @@
  $SEQMODE
- 1
+ 2
  $END
  $CHANNEL
  MPI1 BSEND
@@ -32,13 +32,13 @@
  $END
  $STRINGS
  aoutxxxx binxxxxx 1 50 3 rsta.nc EXPORTED
- axxx axxx LAG=+0
+ axxx bxxx LAG=+10 SEQ=+1
   R 0 R 0
  CHECKIN NOINTERP CHECKOUT
  INT=0
  INT=0
  boutxxxx ainxxxxx 1 50 3 rstb.nc EXPORTED
- axxx axxx LAG=+10
+ bxxx axxx LAG=+10 SEQ=+2
   R 0 R 0
  CHECKIN NOINTERP CHECKOUT
  INT=0
