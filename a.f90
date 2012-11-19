@@ -42,16 +42,12 @@ program a
     call prism_def_var_proto(inid,"ainxxxxx",partid,ndims,PRISM_In,dims,PRISM_Real,ierr)
     call prism_enddef_proto(ierr)
 
-    outfield = 9
-
     do time=0,140,10
-        call prism_put_proto(outid,time,outfield,info)
-        write (*,*) "A put status ",time,info
         call prism_get_proto(inid,time,infield,info)
         write (*,*) "A get status ",time,info
+        call prism_put_proto(outid,time+10,outfield,info)
+        write (*,*) "A put status ",time,info
     end do
-    call prism_put_proto(outid,150,outfield,info)
-    write (*,*) "A put status ",150,info
 
     call prism_terminate_proto(ierr)
 

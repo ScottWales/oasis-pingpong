@@ -44,12 +44,10 @@ program a
 
     do time=0,145,5
         call prism_get_proto(inid,time,infield,info)
-        write(*,*) "b get status ",time,info
-        call prism_put_proto(outid,time,outfield,info)
-        write(*,*) "b put status ",time,info
+        write(*,*) "B get status ",time,info
+        call prism_put_proto(outid,time+5,outfield,info)
+        write(*,*) "B put status ",time,info
     end do
-    call prism_put_proto(outid,150,outfield,info)
-    write(*,*) "b put status ",150,info
 
     call prism_terminate_proto(ierr)
 end program
